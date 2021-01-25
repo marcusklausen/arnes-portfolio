@@ -89,5 +89,59 @@ ul.menu-items li {
     padding: 0.2em 0;
 }
 
+/* footer */
 
-/* 42.27 */ 
+footer.site-footer {
+    background: #ffb310;
+    padding: 1.5em 0;
+}
+
+footer.site-footer h3 {
+    color:#b10000;
+}
+
+footer.site-footer section {
+    padding-bottom: 10px;
+}
+
+footer.site-footer a, footer.site-footer p {
+    color:#b10000;
+    display:block;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+
+}
+
+
+code {
+    background: rgb(254,242,219);
+    margin: 0 0 16px 0;
+    display: block;
+    padding: 1.5em;
+}
+
+
+/* Styles for desktop */
+
+@media screen and (min-width: 600px) {
+    .flex-parent {
+        display:flex;
+        justify-content:space-between;
+    }
+    .flex-parent-right {
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    ul.menu-items li {
+        padding: 8px 10px;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    .sidebar {
+        padding-left:2em;
+    }
+}
+
