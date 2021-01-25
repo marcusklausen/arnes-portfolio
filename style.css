@@ -77,7 +77,16 @@ nav.site-navigation {
 ul.menu-items {
     list-style: none;
     padding: 10px 0;
+    display:none;
 }
+
+.menu-check:checked + .menu-items {
+    display:block;
+}
+
+.side-navigation label img {
+}
+
 
 ul.menu-items a {
     color: white;
@@ -122,7 +131,7 @@ code {
 }
 
 
-/* Styles for desktop */
+/* Styles for desktop (mobile first)*/
 
 @media screen and (min-width: 600px) {
     .flex-parent {
@@ -140,8 +149,27 @@ code {
         border-left: 1px solid white;
     }
 
+    ul.menu-items {
+        display:flex;
+    }
+
     .sidebar {
         padding-left:2em;
     }
+
+    footer.site-footer section {
+        padding: 0 2em;
+    }
+
+    .menu-items a:hover {
+        color: #ffb310;
+    }
+
+    .site-navigation label {
+        display:none;
+    }
+
+
+
 }
 
