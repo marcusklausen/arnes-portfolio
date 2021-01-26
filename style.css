@@ -27,6 +27,18 @@ header.site-header .logo {
 header.site-header .search-form {
     text-align: center;
     margin-top:1em;
+    display:flex;
+    height:40px;
+    margin: auto 0;
+}
+
+.search-btn {
+    background:#b10000;
+    border:1px solid;
+    border-left:0;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
 }
 
 
@@ -71,18 +83,21 @@ h1,h2,h3,h4 {
 
 nav.site-navigation {
     background: #b10000;
-    margin-top: 0.3em;
 }
 
 ul.menu-items {
     list-style: none;
     padding: 10px 0;
     display:none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 .menu-check:checked + .menu-items {
     display:block;
 }
+
 
 .side-navigation label img {
 }

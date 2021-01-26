@@ -16,8 +16,10 @@
             </a>
         
                 <form action="" class="search-form">
-                    <input type="text" placeholder="Søg" class="search-field">
-                    <button class="search-btn" type="button">søg</button>
+                    <input type="text" placeholder="Jeg leder efter..." class="search-field">
+                    <button class="search-btn" type="button">
+                        <img src="img/search.png" alt="søg" class="search-icon">
+                    </button>
                 </form>
 
         </div>
