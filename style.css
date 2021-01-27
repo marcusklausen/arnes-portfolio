@@ -17,11 +17,23 @@ Brødtekst: Sans-serif */
 
 header.site-header {
     background-color: rgb(254,242,219);
+    padding: 1em 0 0 0;
+
+    box-shadow: 0px 0px 10px lightslategrey;
 }
+
 
 header.site-header .logo {
     display:block;
     margin: 0 auto 0 auto;
+}
+
+header.site-header input.search-field {
+    border-radius: 3px 0 0 3px;
+    border:1px solid lightgray;
+    border-right:0;
+
+    padding: 0 1em;
 }
 
 header.site-header .search-form {
@@ -39,7 +51,18 @@ header.site-header .search-form {
     align-items:center;
     justify-content:center;
     padding:10px;
+
+    border-radius:0px 3px 3px 0px;
+    border:0px solid lightgray;
+    border-left:0;
+
 }
+
+body {
+    height:100%;
+    min-height:100%;
+}
+
 
 
 html, body {
@@ -69,6 +92,7 @@ img {
 
 h1,h2,h3,h4 {
     font-family: 'Ranchers', cursive;
+    text-transform: uppercase;
 }
 
 /* Global styles  */
@@ -78,11 +102,18 @@ h1,h2,h3,h4 {
     margin: 0 auto 0 auto;
     padding: 0 0.3em;
 }
+.box-shadow {
+    margin: 3em auto;
+    box-shadow: 0px 0px 35px -10px lightslategray;
+}
+
+
 
 /* Menu  */
 
 nav.site-navigation {
     background: #b10000;
+    margin-top: 1em;
 }
 
 ul.menu-items {
@@ -107,6 +138,7 @@ ul.menu-items a {
     color: white;
     text-decoration: none;
     font-family: 'Ranchers', cursive;
+    text-transform: uppercase;
 }
 
 ul.menu-items li {
@@ -116,8 +148,9 @@ ul.menu-items li {
 /* footer */
 
 footer.site-footer {
-    background: #ffb310;
+    background:  rgb(254,242,219);
     padding: 1.5em 0;
+
 }
 
 footer.site-footer h3 {
@@ -160,8 +193,11 @@ code {
 
     ul.menu-items li {
         padding: 8px 10px;
-        border-right: 1px solid white;
         border-left: 1px solid white;
+    }
+
+    .menu-items li:last-child {
+        border-right: 1px solid white;
     }
 
     ul.menu-items {

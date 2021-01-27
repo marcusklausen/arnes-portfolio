@@ -42,7 +42,7 @@
 
     </header>
 
-    <div class="wrapper flex-parent">
+    <div class="wrapper box-shadow flex-parent">
         <main class="main-content">
 
             <h1>VELKOMMEN TIL ARNES' PORTFOLIO</h1>
