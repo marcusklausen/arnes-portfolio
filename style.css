@@ -10,10 +10,33 @@ Brødtekst: Sans-serif */
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
 
-.search-button {
-    background-image: url(img/search.png);
+/* html */
 
+* {
+    box-sizing: border-box; /* i.e. inverse borders, so element size doesn't increase */
 }
+
+body {
+    height:100%;
+    min-height:100%;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Ranchers', cursive;
+    text-transform: uppercase;
+}
+
+/* Header */
 
 header.site-header {
     background-color: rgb(254,242,219);
@@ -21,7 +44,6 @@ header.site-header {
 
     box-shadow: 0px 0px 10px lightslategrey;
 }
-
 
 header.site-header .logo {
     display:block;
@@ -34,6 +56,8 @@ header.site-header input.search-field {
     border-right:0;
 
     padding: 0 1em;
+    align-items:center;
+    justify-content:center;
 }
 
 header.site-header .search-form {
@@ -41,10 +65,11 @@ header.site-header .search-form {
     margin-top:1em;
     display:flex;
     height:40px;
-    margin: auto 0;
+    justify-content:center;
 }
 
-.search-btn {
+
+header.site-header .search-btn {
     background:#b10000;
     border:1px solid;
     border-left:0;
@@ -58,62 +83,12 @@ header.site-header .search-form {
 
 }
 
-body {
-    height:100%;
-    min-height:100%;
-}
-
-
-
-html, body {
-    padding:0;
-    margin:0;
-    font-family: sans-serif;
-}
-
-/* main {
-    display:flex;
-    justify-content: space-between;
-    margin: 2em;
-}
-
- main article {
-    display:flex;
-    justify-content: space-between;
-}  */
-
-* {
-    box-sizing: border-box; /* i.e. inverse borders, so element size doesn't increase */
-}
-
-img {
-    max-width: 100%;
-}
-
-h1,h2,h3,h4 {
-    font-family: 'Ranchers', cursive;
-    text-transform: uppercase;
-}
-
-/* Global styles  */
-
-.wrapper {
-    max-width: 1100px;
-    margin: 0 auto 0 auto;
-    padding: 0 0.3em;
-}
-.box-shadow {
-    margin: 3em auto;
-    box-shadow: 0px 0px 35px -10px lightslategray;
-}
-
-
-
-/* Menu  */
+/*  ---- Menu  */
 
 nav.site-navigation {
     background: #b10000;
     margin-top: 1em;
+    padding: 0 10px;
 }
 
 ul.menu-items {
@@ -130,10 +105,6 @@ ul.menu-items {
 }
 
 
-.side-navigation label img {
-}
-
-
 ul.menu-items a {
     color: white;
     text-decoration: none;
@@ -143,6 +114,77 @@ ul.menu-items a {
 
 ul.menu-items li {
     padding: 0.2em 0;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.gallery img {
+    display: block;
+}
+
+.gallery a {
+    pointer-events: none;
+}
+
+iframe.expand-image {
+    width: 400px;
+    height: 400px;
+    margin-top: 81px;
+    display:none;
+}
+
+
+/* Contact form*/
+
+.contact-form {
+    min-height:450px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin:10px 0;
+    display:block;
+    min-width:320px;
+    padding:10px;
+}
+
+.contact-form textarea {
+    display:block;
+}
+
+.contact-form label {
+    display:inline;
+}
+
+.contact-form input#nyhedsbrev {
+    display:inline;
+    min-width:auto;
+}
+
+/* Misc */ 
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+}
+
+.box-shadow {
+    margin: 3em auto;
+    box-shadow: 0px 0px 35px -10px lightslategray;
+    padding: 0 1em 1em 1em;
+}
+
+code {
+    background: rgb(254,242,219);
+    margin: 0 0 16px 0;
+    display: block;
+    padding: 1.5em;
 }
 
 /* footer */
@@ -171,15 +213,8 @@ footer.site-footer a, footer.site-footer p {
 }
 
 
-code {
-    background: rgb(254,242,219);
-    margin: 0 0 16px 0;
-    display: block;
-    padding: 1.5em;
-}
 
-
-/* Styles for desktop (mobile first)*/
+/* Styles for desktop (mobile first) */
 
 @media screen and (min-width: 600px) {
     .flex-parent {
@@ -208,6 +243,18 @@ code {
         padding-left:2em;
     }
 
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery a {
+        pointer-events:all;
+    }
+
+    iframe.expand-image {
+        display: block;
+    }
+
     footer.site-footer section {
         padding: 0 2em;
     }
@@ -220,7 +267,11 @@ code {
         display:none;
     }
 
-
+    header.site-header .search-form {
+        margin: auto 0;
+    }
 
 }
+
+
 
