@@ -9,24 +9,23 @@
 </head>
 
 <body>
+
     <header class="site-header">
+        
         <div class="wrapper flex-parent">
             <a href="index.html">
                 <img src="img/logo.png" class="logo">
             </a>
-        
-                <form action="" class="search-form">
-                    <input type="text" placeholder="Jeg leder efter..." class="search-field">
-                    <button class="search-btn" type="button">
-                        <img src="img/search.png" alt="søg" class="search-icon">
-                    </button>
-                </form>
-
-        </div>
+            <form action="" class="search-form">
+                <input type="text" placeholder="Jeg leder efter..." class="search-field">
+                <button class="search-btn" type="button">
+                    <img src="img/search.png" alt="søg" class="search-icon">
+                </button>
+            </form>
+        </div><!-- wrapper -->
 
         <nav class="site-navigation">
             <div class="wrapper">
-                
                 <label for="menu-check">
                     <img src="img/burger-icon.png" alt="Menu">
                 </label>
@@ -39,12 +38,11 @@
             </div>
         </nav>
 
-
     </header>
 
     <div class="wrapper box-shadow flex-parent">
-        <main class="main-content">
 
+        <main class="main-content">
             <h1>VELKOMMEN TIL ARNES' PORTFOLIO</h1>
             <p>
                 Hej, jeg hedder Arne Nougatgren og jeg er musikalsk socialpædagog og rytmeterapeut, med en særlig
@@ -60,53 +58,40 @@
 
         <aside class="sidebar">
             <h2>CSS FLEXBOX</h2>
-            <p>
-                Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear,
-                inline-block, display:table eller andre nederen hacks.
-            </p>
+            <p>Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear,
+                inline-block, display:table eller andre nederen hacks.</p>
 
             <h2>BROWSER SUPPORT:</h2>
             <p>Flexbox modellen er efterhånden rigtig godt understøttet i alle moderne browsere.</p>
 
             <h2>HVORDAN GØR MAN, ARNE?</h2>
-            <p>
-                Jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide give deres
-                umidelbare forældre-element display-proprtien flex
-            </p>
+            <p>Jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide give deres
+                umidelbare forældre-element display-proprtien flex</p>
 
-            <code>
-            .flex-container { display:flex; }
-            </code>
-            <p>
-                Derefter vil alle direkte børn af .flex-conationer placere sig i en række. Det er pædagogik der vil noget.
+            <code>.flex-container { display:flex; }</code>
 
-            </p>    
+            <p>Derefter vil alle direkte børn af .flex-conationer placere sig i en række. Det er pædagogik der vil noget.</p>
+            
             <h2>FORDEL JER LIDT, UNGER</h2>
-            <p>
-                Hvis man li'som vil have alle flex-børnene til at fordele sig over hele bredten, så kan man lige tilføje en
-                justify-content property med værdien space-between
+            <p>Hvis man li'som vil have alle flex-børnene til at fordele sig over hele bredten, så kan man lige tilføje en
+                justify-content property med værdien space-between</p>
 
-            </p>    
             <code>
                 .flex-container {
-                    display:flex;
-                    justify-content: space-between;
+                display:flex;
+                justify-content: space-between;
                 }
             </code>
         </aside>
 
-    </div>
+    </div><!-- wrapper / box-shadow -->
 
     <footer class="site-footer">
         <div class="wrapper flex-parent">
             <section>
                 <h3>Arnes Portfolio</h3>
-                <p>
-                    Paradisæblevej 13
-                </p>
-                <p>
-                    1313 Andeby
-                </p>
+                <p>Paradisæblevej 13</p>
+                <p>1313 Andeby</p>
             </section>
             <section>
                 <h3>Get in touch</h3>
@@ -118,13 +103,7 @@
                 <a href="#">Cookies</a>
                 <a href="#">GDPR</a>
             </section>
-           
         </div>
     </footer>
-
 </body>
-
 </html>
-
-
-
