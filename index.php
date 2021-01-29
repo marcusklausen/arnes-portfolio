@@ -11,9 +11,9 @@
 <body>
 
     <header class="site-header">
-        
+
         <div class="wrapper flex-parent">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="img/logo.png" class="logo">
             </a>
             <form action="" class="search-form">

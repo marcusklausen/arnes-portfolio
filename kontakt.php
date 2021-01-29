@@ -11,8 +11,9 @@
 <body>
 
     <header class="site-header">
+
         <div class="wrapper flex-parent">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="img/logo.png" class="logo">
             </a>
             <form action="" class="search-form">
@@ -22,6 +23,7 @@
                 </button>
             </form>
         </div><!-- wrapper-->
+
         <nav class="site-navigation">
             <div class="wrapper">
                 <label for="menu-check">
@@ -35,20 +37,21 @@
                 </ul>
             </div> <!-- wrapper -->
         </nav>
+
     </header>
 
     <div class="wrapper box-shadow flex-parent">
 
         <main class="main-content">
             <h1>Kontakt mig</h2>
-                <form action="" class="contact-form">
-                    <input type="text" name="navn" id="navn" placeholder="Navn" required>
-                    <input type="text" name="email" id="email" placeholder="Email" required>
-                    <textarea placeholder="Din besked..." required></textarea>
-                    <input type="checkbox" name="nyhedsbrev" id="nyhedsbrev">
-                    <label>Tilmeld dig nyhedsbrev</label>
-                    <input type="submit" value="send">
-                </form>
+            <form action="" class="contact-form">
+                <input type="text" name="navn" id="navn" placeholder="Navn" required>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+                <textarea placeholder="Din besked..." required></textarea>
+                <input type="checkbox" name="nyhedsbrev" id="nyhedsbrev">
+                <label>Tilmeld dig nyhedsbrev</label>
+                <input type="submit" value="send">
+            </form>
         </main>
 
         <aside class="sidebar">

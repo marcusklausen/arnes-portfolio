@@ -9,9 +9,11 @@
 </head>
 
 <body>
+
     <header class="site-header">
+
         <div class="wrapper flex-parent">
-            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <a href="index.php"><img src="img/logo.png" class="logo"></a>
             <form action="" class="search-form">
                 <input type="text" placeholder="Jeg leder efter..." class="search-field">
                 <button class="search-btn" type="button">
@@ -19,6 +21,7 @@
                 </button>
             </form>
         </div><!-- wrapper -->
+        
         <nav class="site-navigation">
             <div class="wrapper">
                 <label for="menu-check">
@@ -32,6 +35,7 @@
                 </ul>
             </div><!-- wrapper -->
         </nav>
+
     </header>
 
     <div class="wrapper box-shadow flex-parent">
