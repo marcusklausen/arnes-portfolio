@@ -10,6 +10,7 @@ Brødtekst: Sans-serif */
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
 
+
 /* html */
 
 * {
@@ -82,6 +83,7 @@ header.site-header .search-btn {
     border-left:0;
 
 }
+
 
 /*  ---- Menu  */
 
@@ -167,6 +169,7 @@ iframe.expand-image {
     min-width:auto;
 }
 
+
 /* Misc */ 
 
 .wrapper {
@@ -186,6 +189,7 @@ code {
     display: block;
     padding: 1.5em;
 }
+
 
 /* footer */
 
@@ -211,7 +215,6 @@ footer.site-footer a, footer.site-footer p {
     font-weight: bold;
 
 }
-
 
 
 /* Styles for desktop (mobile first) */
