@@ -102,6 +102,10 @@ ul.menu-items {
     margin-block-end: 0px;
 }
 
+nav.site-navigation label img {
+    padding:10px;
+}
+
 .menu-check:checked + .menu-items {
     display:block;
 }
